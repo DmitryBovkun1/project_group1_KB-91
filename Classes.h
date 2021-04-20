@@ -30,8 +30,11 @@ class User
 {
 private:
 	bool adminLicence;
+	string adminPassword;// добавлено новое поле
 	string adminName;
-	string adminSurname;
+	string adminSurname;	
+	string getAdminPassword();
+	void setAdminPassword(string AdminPassword);
 public:
 	User();
 	void setAdminLicence(bool AdminLicense);
@@ -48,12 +51,13 @@ class SearchDiscipline
 private:
 	vector<Discipline> resultOfSearch;
 	Discipline searchParametrs;
-	User currentUser;
 public:
+	User currentUser;
 	SearchDiscipline();
-	void setParametrs(string GroupName, string NameTeacher, string Date, string Audience);
-	void LastSearch();
+	void setParametr(string parametr, int choice);
+	void setParametrs(string DisciplineName, string GroupName, string NameTeacher, string Date, string Audience);
 	void AddDiscipline(string DisciplineName, string GroupName, string NameTeacher, string Date, string Audience);
 	void setResultOfSearch();
 	void printResult();
+	void printDiscipline();
 };
