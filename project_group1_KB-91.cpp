@@ -29,6 +29,7 @@ int main()
         {
             cout << "3 - Добавить дисциплину" << endl;
             cout << "4 - Изменить параметры администратора" << endl;
+            cout << "5 - Обновить базу даных за указаными параметрами" << endl;
         }
         cout << "0 - Выйти" << endl;
 
@@ -39,7 +40,10 @@ int main()
         if (choice == "1")
         {
             currentSearch.setResultOfSearch();
+            cout << endl << endl;
             currentSearch.printResult();
+            system("PAUSE");
+            system("cls");
         }
         else if (choice == "2")
         {
@@ -176,6 +180,12 @@ int main()
             cout << "Введите новую фамилию администратора" << endl;
             getline(cin, AdminSurname, '\n');
             currentSearch.currentUser.changeAdmin(AdminName, AdminSurname);
+        }
+        else if (choice == "5" && currentSearch.currentUser.getAdminLicence() == 1)
+        {
+            system("start myScript.exe");
+            system("PAUSE");
+            system("cls");
         }
         else if (choice == "0")
         {

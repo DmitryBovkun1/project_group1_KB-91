@@ -274,12 +274,13 @@ void SearchDiscipline::setParametrs(string DisciplineName, string GroupName, str
 void SearchDiscipline::AddDiscipline(string DisciplineName, string GroupName, string NameTeacher, string Date, string Audience)
 {
 	fstream AllDiscipline;
-	AllDiscipline.open("allDiscipline.txt", ios_base::app);
+	AllDiscipline.open("allDiscipline.html", ios_base::app);
 	AllDiscipline << DisciplineName << endl;
 	AllDiscipline << GroupName << endl;
 	AllDiscipline << NameTeacher << endl;
 	AllDiscipline << Date << endl;
 	AllDiscipline << Audience << endl;
+	AllDiscipline.close();
 }
 
 void SearchDiscipline::setResultOfSearch()
@@ -287,20 +288,24 @@ void SearchDiscipline::setResultOfSearch()
 	cout << "Заданные параметры дисциплины:" << endl;
 	printDiscipline();
 	ifstream AllDiscipline;
-	AllDiscipline.open("allDiscipline.txt");
+	AllDiscipline.open("allDiscipline.html");
 	while (!AllDiscipline.eof())
 	{
 		string t;
 		Discipline temp;
-		AllDiscipline >> t;
+		getline(AllDiscipline, t);
+		if (t == "")
+		{
+			break;
+		}
 		temp.setDisciplineName(t);
-		AllDiscipline >> t;
+		getline(AllDiscipline, t);
 		temp.setGroupName(t);
-		AllDiscipline >> t;
+		getline(AllDiscipline, t);
 		temp.setNameTeacher(t);
-		AllDiscipline >> t;
+		getline(AllDiscipline, t);
 		temp.setDate(t);
-		AllDiscipline >> t;
+		getline(AllDiscipline, t);
 		temp.setAudience(t);
 		if ((temp.getDisciplineName() == searchParametrs.getDisciplineName() || searchParametrs.getDisciplineName() == "None")&&
 			(temp.getGroupName() == searchParametrs.getGroupName() || searchParametrs.getGroupName() == "None") &&
@@ -311,6 +316,7 @@ void SearchDiscipline::setResultOfSearch()
 			resultOfSearch.push_back(temp);
 		}
 	}
+	AllDiscipline.close();
 }
 
 void SearchDiscipline::printResult()
@@ -324,6 +330,7 @@ void SearchDiscipline::printResult()
 		cout << "Дата преподавания - " << resultOfSearch[i].getDate() << endl;
 		cout << "Аудитория преподавания - " << resultOfSearch[i].getAudience() << endl;
 	}
+	resultOfSearch.clear();
 }
 
 void SearchDiscipline::printDiscipline()

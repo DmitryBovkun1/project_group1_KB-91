@@ -1,0 +1,15 @@
+H:\Учеба\Технологiя_проектування_програм\ДизайнПроекту_група1_КБ-91\myScript\bin\Debug\netcoreapp3.1\myScript.exe
+H:\Учеба\Технологiя_проектування_програм\ДизайнПроекту_група1_КБ-91\myScript\bin\Debug\netcoreapp3.1\myScript.deps.json
+H:\Учеба\Технологiя_проектування_програм\ДизайнПроекту_група1_КБ-91\myScript\bin\Debug\netcoreapp3.1\myScript.runtimeconfig.json
+H:\Учеба\Технологiя_проектування_програм\ДизайнПроекту_група1_КБ-91\myScript\bin\Debug\netcoreapp3.1\myScript.runtimeconfig.dev.json
+H:\Учеба\Технологiя_проектування_програм\ДизайнПроекту_група1_КБ-91\myScript\bin\Debug\netcoreapp3.1\myScript.dll
+H:\Учеба\Технологiя_проектування_програм\ДизайнПроекту_група1_КБ-91\myScript\bin\Debug\netcoreapp3.1\myScript.pdb
+H:\Учеба\Технологiя_проектування_програм\ДизайнПроекту_група1_КБ-91\myScript\obj\Debug\netcoreapp3.1\myScript.csprojAssemblyReference.cache
+H:\Учеба\Технологiя_проектування_програм\ДизайнПроекту_група1_КБ-91\myScript\obj\Debug\netcoreapp3.1\myScript.AssemblyInfoInputs.cache
+H:\Учеба\Технологiя_проектування_програм\ДизайнПроекту_група1_КБ-91\myScript\obj\Debug\netcoreapp3.1\myScript.AssemblyInfo.cs
+H:\Учеба\Технологiя_проектування_програм\ДизайнПроекту_група1_КБ-91\myScript\obj\Debug\netcoreapp3.1\myScript.dll
+H:\Учеба\Технологiя_проектування_програм\ДизайнПроекту_група1_КБ-91\myScript\obj\Debug\netcoreapp3.1\myScript.pdb
+H:\Учеба\Технологiя_проектування_програм\ДизайнПроекту_група1_КБ-91\myScript\obj\Debug\netcoreapp3.1\myScript.genruntimeconfig.cache
+h:\Учеба\Технологiя_проектування_програм\ДизайнПроекту_група1_КБ-91\myScript\obj\Debug\netcoreapp3.1\myScript.csproj.CoreCompileInputs.cache
+h:\Учеба\Технологiя_проектування_програм\ДизайнПроекту_група1_КБ-91\myScript\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+h:\Учеба\Технологiя_проектування_програм\ДизайнПроекту_група1_КБ-91\myScript\obj\Debug\netcoreapp3.1\myScript.csproj.CopyComplete
