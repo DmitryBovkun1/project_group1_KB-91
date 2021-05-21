@@ -30,6 +30,7 @@ int main()
             cout << "3 - Добавить дисциплину" << endl;
             cout << "4 - Изменить параметры администратора" << endl;
             cout << "5 - Обновить базу даных за указаными параметрами" << endl;
+            cout << "6 - Удалить дисциплину за указанными параметрами" << endl;
         }
         cout << "0 - Выйти" << endl;
 
@@ -57,7 +58,7 @@ int main()
                 cout << "Выбирите параметры которые нужно изменить для поиска " << endl;
                 cout << "1 - Изменить название предмета" << endl;
                 cout << "2 - Изменить группу преподавания " << endl;
-                cout << "3 - Изменить искомого преподавания " << endl;
+                cout << "3 - Изменить искомого преподавателя " << endl;
                 cout << "4 - Изменить дату преподавания " << endl;
                 cout << "5 - Изменить искомую аудиторию " << endl;
                 cout << "6 - Изменить всё параметры " << endl;
@@ -186,6 +187,113 @@ int main()
             system("start myScript.exe");
             system("PAUSE");
             system("cls");
+        }
+        else if (choice == "6" && currentSearch.currentUser.getAdminLicence() == 1)
+        {
+            while (true)
+            {
+                system("PAUSE");
+                system("cls");
+                int choiceChanges;
+                cout << "Текущие параметры (параметр None - параметр по умолчанию)" << endl;
+                currentSearch.printDeleteDiscipline();
+                cout << "Выбирите параметры которые нужно изменить для удаления " << endl;
+                cout << "1 - Изменить название предмета" << endl;
+                cout << "2 - Изменить группу преподавания " << endl;
+                cout << "3 - Изменить искомого преподавателя " << endl;
+                cout << "4 - Изменить дату преподавания " << endl;
+                cout << "5 - Изменить искомую аудиторию " << endl;
+                cout << "6 - Изменить всё параметры " << endl;
+                cout << "7 - Удалить за заданными параметрами" << endl;
+                cout << "0 - Выход из процедуры" << endl;
+                cin >> choiceChanges;
+                system("PAUSE");
+                system("cls");
+                bool end = 0;
+                switch (choiceChanges)
+                {
+                case 1:
+                {
+                    string disciplineName;
+                    cout << "Введите новое название предмета для поиска" << endl;
+                    cin.ignore();
+                    getline(cin, disciplineName);
+                    currentSearch.setDeleteParametr(disciplineName, choiceChanges);
+                    break;
+                }
+                case 2:
+                {
+                    string groupName;
+                    cout << "Введите новое название группы" << endl;
+                    cin.ignore();
+                    getline(cin, groupName);
+                    currentSearch.setDeleteParametr(groupName, choiceChanges);
+                    break;
+                }
+                case 3:
+                {
+                    string nameTeacher;
+                    cout << "Введите фамилию преподавателя для поиска" << endl;
+                    cin.ignore();
+                    getline(cin, nameTeacher);
+                    currentSearch.setDeleteParametr(nameTeacher, choiceChanges);
+                    break;
+                }
+                case 4:
+                {
+                    string date;
+                    cout << "Введите дату проведения занятия для поиска" << endl;
+                    cin.ignore();
+                    getline(cin, date);
+                    currentSearch.setDeleteParametr(date, choiceChanges);
+                    break;
+                }
+                case 5:
+                {
+                    string audience;
+                    cout << "Введите аудиторию для поиска" << endl;
+                    cin.ignore();
+                    getline(cin, audience);
+                    currentSearch.setDeleteParametr(audience, choiceChanges);
+                    break;
+                }
+                case 6:
+                {
+                    string disciplineName, groupName, nameTeacher, date, audience;
+                    cout << "Введите новое название предмета для поиска" << endl;
+                    cin.ignore();
+                    getline(cin, disciplineName, '\n');
+                    cout << "Введите новое название группы" << endl;
+                    getline(cin, groupName, '\n');
+                    cout << "Введите фамилию преподавателя для поиска" << endl;
+                    getline(cin, nameTeacher, '\n');
+                    cout << "Введите дату проведения занятия для поиска" << endl;
+                    getline(cin, date, '\n');
+                    cout << "Введите аудиторию для поиска" << endl;
+                    getline(cin, audience, '\n');
+                    currentSearch.setDeleteParametrs(disciplineName, groupName, nameTeacher, date, audience);
+                    break;
+                }
+                case 7:
+                    currentSearch.deleteDiscipline();
+                    cout << "Дисциплины удалены" << endl;
+                    break;
+                case 0:
+                {
+                    end = 1;
+                    break;
+                }
+                default:
+                    cout << "Введено неверное значение! Попробуйте ещё раз!" << endl;
+                    cin.fail();
+                    break;
+                }
+
+                if (end == 1)
+                {
+                    break;
+                }
+            }
         }
         else if (choice == "0")
         {

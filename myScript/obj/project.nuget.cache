@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "u/upWzH0Pu9kG476j4r8vE7evdXSq6+tTrcuRoeDdk9s7cqEK/fOdAoQqum9vwujLkmxsGb48gOdvJopZfSOkw==",
+  "dgSpecHash": "0hBkWzZmj3JrpmTTLVCH4PZT37cMb5oJLbKswL7IjPTAaFc1foNEkuGYF29pDbX6IfDrQ5/afnsT0L8+DKMhpQ==",
   "success": true,
-  "projectFilePath": "h:\\Учеба\\Технологiя_проектування_програм\\ДизайнПроекту_група1_КБ-91\\myScript\\myScript.csproj",
+  "projectFilePath": "h:\\Учеба\\Технологiя_проектування_програм\\ДизайнПроекту_група1_КБ-91\\project_group1_KB-91\\myScript\\myScript.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Дмитрий\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],

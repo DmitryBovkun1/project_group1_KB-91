@@ -53,11 +53,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "h:\\Учеба\\Технологiя_проектування_програм\\ДизайнПроекту_група1_КБ-91\\myScript\\myScript.csproj",
+      "projectUniqueName": "h:\\Учеба\\Технологiя_проектування_програм\\ДизайнПроекту_група1_КБ-91\\project_group1_KB-91\\myScript\\myScript.csproj",
       "projectName": "myScript",
-      "projectPath": "h:\\Учеба\\Технологiя_проектування_програм\\ДизайнПроекту_група1_КБ-91\\myScript\\myScript.csproj",
+      "projectPath": "h:\\Учеба\\Технологiя_проектування_програм\\ДизайнПроекту_група1_КБ-91\\project_group1_KB-91\\myScript\\myScript.csproj",
       "packagesPath": "C:\\Users\\Дмитрий\\.nuget\\packages\\",
-      "outputPath": "h:\\Учеба\\Технологiя_проектування_програм\\ДизайнПроекту_група1_КБ-91\\myScript\\obj\\",
+      "outputPath": "h:\\Учеба\\Технологiя_проектування_програм\\ДизайнПроекту_група1_КБ-91\\project_group1_KB-91\\myScript\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Дмитрий\\AppData\\Roaming\\NuGet\\NuGet.Config",

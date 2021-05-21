@@ -30,7 +30,7 @@ class User
 {
 private:
 	bool adminLicence;
-	string adminPassword;// добавлено новое поле
+	string adminPassword;
 	string adminName;
 	string adminSurname;	
 	string getAdminPassword();
@@ -51,6 +51,7 @@ class SearchDiscipline
 private:
 	vector<Discipline> resultOfSearch;
 	Discipline searchParametrs;
+	Discipline deleteParametrs;
 public:
 	User currentUser;
 	SearchDiscipline();
@@ -60,4 +61,8 @@ public:
 	void setResultOfSearch();
 	void printResult();
 	void printDiscipline();
+	void printDeleteDiscipline();
+	void deleteDiscipline();
+	void setDeleteParametr(string parametr, int choice);
+	void setDeleteParametrs(string DisciplineName, string GroupName, string NameTeacher, string Date, string Audience);
 };

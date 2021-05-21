@@ -81,7 +81,7 @@ namespace myScript
             try
             {
                 string group;
-                Console.WriteLine("Введите id группы по которой будет заполняться файл");
+                Console.WriteLine("Введите id группы по которой будет заполняться файл (номер можно получить на сайте - https://schedule.sumdu.edu.ua/index/json?method=getGroups)");
                 group = Console.ReadLine();
                 Console.WriteLine("Введите день от которого будет заполнено расписание(в виде DD.MM.YYYY)");
                 string start_day = Console.ReadLine();
